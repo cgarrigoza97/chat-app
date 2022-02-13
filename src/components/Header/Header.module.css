@@ -1,0 +1,8 @@
+
+
+.header {
+    grid-area: header;
+    background: var(--bg-color-1);
+    height: var(--header-height);
+    width: 100%;
+}

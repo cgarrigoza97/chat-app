@@ -1,0 +1,10 @@
+
+
+.sidebar {
+    grid-area: sidebar;
+    background: var(--bg-color-1);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}

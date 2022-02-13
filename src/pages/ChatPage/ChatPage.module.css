@@ -1,0 +1,34 @@
+
+
+.chatPageContainer {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.sidebarContainer, .contentContainer {
+    height: 100%;
+}
+
+.sidebarContainer {
+    width: 25%;
+}
+
+.contentContainer {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .sidebarContainer {
+        width: 100%;
+    }
+
+    .contentContainer {
+        width: 0;
+        overflow: hidden;
+    }
+
+}
