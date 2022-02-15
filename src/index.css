@@ -4,6 +4,7 @@
   --blue: #3390EC;
   --light-gray: #F4F4F5;
   --gray: #BCBABC;
+  --gray-2: 112, 117, 121;
 }
 
 
@@ -16,4 +17,37 @@ body {
 .light {
   --bg-color-1: white;
   --bg-color-2: #A2AF8E;
+  --font-color-1: #B2B5B7;
+  --highlight-color: var(--blue);
+  --bg-input: var(--light-gray);
+  --animation-speed: 150ms;
+}
+
+button {
+  cursor: pointer;
+}
+
+@keyframes rotating {
+  from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+  }
+  to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+  }
+}
+
+.rotating {
+  -webkit-animation: rotating 1s linear infinite;
+  -moz-animation: rotating 1s linear infinite;
+  -ms-animation: rotating 1s linear infinite;
+  -o-animation: rotating 1s linear infinite;
+  animation: rotating 1s linear infinite;
 }

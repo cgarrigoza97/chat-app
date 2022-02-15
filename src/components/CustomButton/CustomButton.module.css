@@ -1,0 +1,21 @@
+
+.customButtonWrapper {
+    background-color: transparent;
+}
+
+.customButtonWrapper button {
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    transition: background-color var(--animation-speed) ease;
+}
+
+.customButtonWrapper button:hover {
+    background-color: rgba( var(--gray-2), 0.08);
+}

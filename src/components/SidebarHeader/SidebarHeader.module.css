@@ -1,8 +1,18 @@
 
 
-.SidebarHeader {
+.sidebarHeader {
     width: 100%;
     height: var(--header-height);
     display: flex;
     align-items: center;
+    padding: 0 1em;
+    box-sizing: border-box;
+}
+
+.btnContainer {
+    width: 15%;
+}
+
+.inputContainer {
+    width: 85%;
 }

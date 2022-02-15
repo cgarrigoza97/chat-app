@@ -1,0 +1,36 @@
+
+.inputSearchWrapper {
+    width: 100%;
+    min-height: 3em;
+    display: flex;
+    align-items: center;
+    background-color: var(--bg-input);
+    border: 2px solid transparent;
+    border-radius: 5em;
+    padding-left:  0.7em;
+    padding-right: 0.2em;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color var(--animation-speed) ease;
+}
+
+.inputSearchWrapperFocus {
+    border: 2px solid var(--highlight-color);
+    background-color: var(--bg-color-1);
+}
+
+.inputSearchWrapper input {
+    width: 100%;
+    border: none;
+    background: transparent;
+    font-size: inherit;
+    box-sizing: border-box;
+}
+
+.inputSearchWrapper input::placeholder {
+    color: var(--font-color-1);
+}
+
+.inputSearchWrapper input:focus {
+    outline: none;
+}
