@@ -1,0 +1,12 @@
+
+.chatsContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.5rem 0.125rem 0.5rem 0.4375rem;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}

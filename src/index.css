@@ -5,6 +5,7 @@
   --light-gray: #F4F4F5;
   --gray: #BCBABC;
   --gray-2: 112, 117, 121;
+  --gray-3: #686c72;
 }
 
 
@@ -17,10 +18,19 @@ body {
 .light {
   --bg-color-1: white;
   --bg-color-2: #A2AF8E;
+  --bg-color-3: var(--blue);
   --font-color-1: #B2B5B7;
   --highlight-color: var(--blue);
   --bg-input: var(--light-gray);
+  --bg-hover: var(--light-gray);
+  --text-color-1: var(--gray-3);
+  --text-color-2: rgb(var(--gray-2));
+  --text-color-3: white;
   --animation-speed: 150ms;
+}
+
+h1 {
+  margin: 0;
 }
 
 button {

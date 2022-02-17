@@ -1,0 +1,100 @@
+
+.chatCardContainer {
+    width: 100%;
+    min-height: 4.5rem;
+    border-radius: 0.8rem;
+    background-color: transparent;
+    display: flex;
+}
+
+.chatCardContainerActive {
+    background-color: var(--bg-color-3) !important;
+}
+
+.chatCardContainerActive h1 {
+    color: var(--text-color-3);
+}
+
+.chatCardContainerActive span {
+    color: var(--text-color-3) !important;
+}
+
+.chatCardContainer:hover {
+    background-color: var(--bg-hover);
+}
+
+.chatCardContainer ::-webkit-scrollbar-thumb {
+    opacity: 0;
+}
+
+.chatCardContainer:hover ::-webkit-scrollbar-thumb {
+    opacity: 1;
+} 
+
+.chatCardImageContainer, .chatCardBodyContainer {
+    height: 100%;
+}
+
+.chatCardImageContainer {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chatCardImageContainer img {
+    border-radius: 50%;
+    width: 80%;
+    object-fit: cover;
+}
+
+.chatCardBodyContainer {
+    width: 80%;
+    padding-right: 0.6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.chatCardBodyHeader {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.4rem;
+}
+
+.chatCardBodyHeader h1 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.chatCardBodyHeader span {
+    font-size: .75rem;
+    color: var(--text-color-1);
+}
+
+.chatCardBodyContent {
+    width: 100%;
+}
+
+.chatCardBodyContent span {
+    font-size: 1rem;
+    color: var(--text-color-2);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+::-webkit-scrollbar {
+    width: 0.4rem;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--gray);
+    border-radius: 5rem;
+}
