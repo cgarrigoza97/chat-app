@@ -1,8 +1,6 @@
 
 .chatCardContainer {
     width: 100%;
-    min-height: 4.5rem;
-    border-radius: 0.8rem;
     background-color: transparent;
     display: flex;
 }

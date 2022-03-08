@@ -1,31 +1,51 @@
+import { Button } from '@mui/material'
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { colors } from '../../helpers/colors';
 import styles from './ChatCard.module.css'
 
 interface Props {
     active?: boolean
 }
 
+// TODO: check how to modify when dark mode is selected
+// TODO: change ripple color
+const theme = createTheme({
+    components: {
+        MuiButton: {
+            styleOverrides: {
+                root: {
+                    borderRadius: '0.8rem',
+                    minHeight: '4.5rem',
+                    backgroundColor: 'transparent',
+                    display: 'flex',
+                    "&:hover": {
+                        backgroundColor: colors.lightGray,
+                    },
+                }
+            },
+        },
+    }
+})
+
 export const ChatCard = ({ active } : Props) => {
     return (
-        <div className={`${styles.chatCardContainer} ${active && styles.chatCardContainerActive}`}> 
-
-            <div className={styles.chatCardImageContainer}>
-                <img src='https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png' alt='icon' />
-            </div>
-
-            <div className={styles.chatCardBodyContainer}>
-
-                <div className={styles.chatCardBodyHeader}>
-                    <h1>Chat Name</h1>
-
-                    <span>18:30</span>
+        <ThemeProvider theme={theme}>
+            <Button
+                className={`${styles.chatCardContainer} ${active && styles.chatCardContainerActive}`}
+            >
+                <div className={styles.chatCardImageContainer}>
+                    <img src='https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png' alt='icon' />
                 </div>
-
-                <div className={styles.chatCardBodyContent}>
-                    <span>Placeholder for chat</span>
+                <div className={styles.chatCardBodyContainer}>
+                    <div className={styles.chatCardBodyHeader}>
+                        <h1>Chat Name</h1>
+                        <span>18:30</span>
+                    </div>
+                    <div className={styles.chatCardBodyContent}>
+                        <span>Placeholder for chat</span>
+                    </div>
                 </div>
-
-            </div>
-
-        </div>
+            </Button>
+        </ThemeProvider>
     )
 }
