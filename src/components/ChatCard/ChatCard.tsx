@@ -15,7 +15,7 @@ const theme = createTheme({
             styleOverrides: {
                 root: {
                     borderRadius: '0.8rem',
-                    minHeight: '4.5rem',
+                    height: '4.5rem',
                     backgroundColor: 'transparent',
                     display: 'flex',
                     "&:hover": {
