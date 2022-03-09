@@ -13,7 +13,9 @@
     color: var(--text-color-3);
 }
 
-.chatCardContainerActive span {
+.chatCardContainerActive span,
+.chatCardContainerActive p
+{
     color: var(--text-color-3) !important;
 }
 
@@ -59,7 +61,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 0.4rem;
+    /* margin-bottom: 0.4rem; */
 }
 
 .chatCardBodyHeader h1 {
@@ -70,18 +72,23 @@
 .chatCardBodyHeader span {
     font-size: .75rem;
     color: var(--text-color-1);
+    font-weight: 400;
 }
 
 .chatCardBodyContent {
     width: 100%;
+    display: flex;
+    justify-content: flex-start;
 }
 
-.chatCardBodyContent span {
+.chatCardBodyContent p {
     font-size: 1rem;
     color: var(--text-color-2);
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    font-weight: 400;
+    margin: 0;
 }
 
 ::-webkit-scrollbar {

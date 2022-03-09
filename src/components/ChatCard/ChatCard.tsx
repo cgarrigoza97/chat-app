@@ -21,6 +21,7 @@ const theme = createTheme({
                     "&:hover": {
                         backgroundColor: colors.lightGray,
                     },
+                    textTransform: 'none'
                 }
             },
         },
@@ -42,7 +43,7 @@ export const ChatCard = ({ active } : Props) => {
                         <span>18:30</span>
                     </div>
                     <div className={styles.chatCardBodyContent}>
-                        <span>Placeholder for chat</span>
+                        <p>Placeholder for chat</p>
                     </div>
                 </div>
             </Button>
