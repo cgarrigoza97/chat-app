@@ -6,6 +6,8 @@
   --gray: #BCBABC;
   --gray-2: 112, 117, 121;
   --gray-3: #686c72;
+  --gray-4: rgb(218,220,224);
+  --gray-5: rgba(114,114,114,0.168627);
 }
 
 
@@ -26,6 +28,8 @@ body {
   --text-color-1: var(--gray-3);
   --text-color-2: rgb(var(--gray-2));
   --text-color-3: white;
+  --border-color: var(--gray-4);
+  --color-light-shadow: var(--gray-5);
   --animation-speed: 150ms;
 }
 
