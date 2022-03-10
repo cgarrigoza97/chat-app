@@ -1,5 +1,4 @@
 
-
 .header {
     background: var(--bg-color-1);
     height: var(--header-height);
@@ -14,8 +13,70 @@
     padding-right: 0.8125rem;
 }
 
+.headerInfoContainer {
+    display: flex;
+}
+
+.headerInfoImgContainer {
+    width: calc(var(--header-height) * 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerInfoImgContainer img {
+    border-radius: 50%;
+    width: 80%;
+    object-fit: cover;
+    margin-right: 0.625rem
+}
+
 .headerBtnContainer {
     height: 100%;
     display: flex;
     align-items: center;
+}
+
+.headerInfoBodyContainer {
+    width: 80%;
+    padding-right: 0.6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.headerInfoBodyContainer {
+    width: 80%;
+    padding-right: 0.6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.headerInfoBodyHeader {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerInfoBodyHeader h1 {
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.headerInfoBodyContent {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.headerInfoBodyContent p {
+    font-size: .875rem;
+    color: var(--text-color-2);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: 400;
+    margin: 0;
 }
