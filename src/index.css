@@ -8,6 +8,8 @@
   --gray-3: #686c72;
   --gray-4: rgb(218,220,224);
   --gray-5: rgba(114,114,114,0.168627);
+  --gray-6: #a2acb4;
+  --border-radius: 0.75rem;
 }
 
 
@@ -30,6 +32,8 @@ body {
   --text-color-3: white;
   --border-color: var(--gray-4);
   --color-light-shadow: var(--gray-5);
+  --icon-color-1: rgb(var(--gray-2), 0.8);
+  --placeholder-color: var(--gray-6);
   --animation-speed: 150ms;
 }
 

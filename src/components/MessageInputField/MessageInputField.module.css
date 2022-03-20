@@ -1,0 +1,53 @@
+
+.MessageInputFieldContainer {
+    width: 100%;
+    min-height: 3.5rem;
+    background-color: var(--bg-color-1);
+    margin-top: auto;
+    margin-bottom: 1.25rem;
+    border-radius: var(--border-radius);
+    display: flex;
+    align-items: flex-end;
+}
+
+.MessageInputBtnWrapper {
+    height: 3.5rem;
+    width: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.MessageInputFieldWrapper {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    cursor: text;
+    display: flex;
+    align-items: center;
+}
+
+.MessageInputFieldContentEditable {
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    outline: none;
+    white-space: pre-wrap;
+    word-break: break-word;
+    padding: 1rem 0;
+}
+
+.MessageInputFieldPlaceholderWrapper {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+
+.MessageInputFieldPlaceholderColor {
+    color: var(--placeholder-color);
+}
