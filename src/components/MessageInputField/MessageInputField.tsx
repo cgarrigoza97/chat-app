@@ -1,8 +1,9 @@
 import { useRef, useState } from 'react';
 import SentimentSatisfiedAltIcon from '@mui/icons-material/SentimentSatisfiedAlt';
 import AttachFileIcon from '@mui/icons-material/AttachFile';
-import { IconButton } from '@mui/material'
 import styles from './MessageInputField.module.css'
+import { MessageInputIconButton } from '../MessageInputIconButton/MessageInputIconButton';
+
 
 export const MessageInputField = () => {
 
@@ -21,9 +22,7 @@ export const MessageInputField = () => {
     return (
         <div className={styles.MessageInputFieldContainer}>
             <div className={styles.MessageInputBtnWrapper}>
-                <IconButton>
-                    <SentimentSatisfiedAltIcon style={{ color: 'var(--icon-color-1)' }}/>
-                </IconButton>
+                <MessageInputIconButton icon={SentimentSatisfiedAltIcon} />
             </div>
 
             <div
@@ -45,9 +44,7 @@ export const MessageInputField = () => {
             
 
             <div className={styles.MessageInputBtnWrapper}>
-                <IconButton>
-                    <AttachFileIcon style={{ color: 'var(--icon-color-1)' }} />
-                </IconButton>
+                <MessageInputIconButton icon={AttachFileIcon} />
             </div>
         </div>
     )

@@ -1,6 +1,5 @@
 import { Button } from '@mui/material'
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { colors } from '../../helpers/colors';
 import styles from './ChatCard.module.css'
 
 interface Props {
@@ -19,7 +18,7 @@ const theme = createTheme({
                     backgroundColor: 'transparent',
                     display: 'flex',
                     "&:hover": {
-                        backgroundColor: colors.lightGray,
+                        backgroundColor: 'var(--light-gray)',
                     },
                     textTransform: 'none'
                 }

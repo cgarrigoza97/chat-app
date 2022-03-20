@@ -1,0 +1,20 @@
+
+.bottomChatContentContainer {
+    margin-top: auto;
+    margin-bottom: 1.25rem;
+    width: 100%;
+    display: flex;
+}
+
+.inputFieldWrapper {
+    width: calc(100% - var(--large-round-button-width));
+}
+
+.roundButtonWrapper {
+    height: var(--large-round-button-height);
+    width: var(--large-round-button-width);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.5rem;
+}

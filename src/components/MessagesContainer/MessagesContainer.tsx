@@ -1,10 +1,10 @@
-import { MessageInputField } from '../MessageInputField/MessageInputField'
+import { BottomChatContent } from '../BottomChatContent/BottomChatContent';
 import styles from './MessagesContainer.module.css'
 
 export const MessagesContainer = () => {
     return (
         <div className={styles.messagesContainerWrapper}>
-            <MessageInputField />
+            <BottomChatContent />
         </div>
     )
 }

@@ -1,18 +1,17 @@
 
 .MessageInputFieldContainer {
     width: 100%;
-    min-height: 3.5rem;
+    max-height: 50vh;
+    min-height: var(--message-input-field-height);
     background-color: var(--bg-color-1);
-    margin-top: auto;
-    margin-bottom: 1.25rem;
     border-radius: var(--border-radius);
     display: flex;
     align-items: flex-end;
 }
 
 .MessageInputBtnWrapper {
-    height: 3.5rem;
-    width: 3.5rem;
+    height: var(--message-input-field-height);
+    width: var(--message-input-field-height);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,13 +27,16 @@
 }
 
 .MessageInputFieldContentEditable {
+    height: 100%;
     width: 100%;
+    overflow-y: auto;
     z-index: 1;
     position: relative;
     outline: none;
     white-space: pre-wrap;
     word-break: break-word;
     padding: 1rem 0;
+    box-sizing: border-box;
 }
 
 .MessageInputFieldPlaceholderWrapper {
