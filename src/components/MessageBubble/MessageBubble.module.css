@@ -1,0 +1,66 @@
+
+.messageBuble {
+    background-color: var(--bg-color-1);
+    padding: 0.3125rem 0.5rem 0.375rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.uniqueBorderRadius {
+    border-radius: var(--border-radius);
+}
+
+.firstBorderRadius,
+.middleBorderRadius, 
+.lastBorderRadius 
+{
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+}
+
+.firstBorderRadius {
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius-small);
+}
+
+.middleBorderRadius {
+    border-top-left-radius: var(--border-radius-small);
+    border-bottom-left-radius: var(--border-radius-small);
+}
+
+.lastBorderRadius {
+    border-top-left-radius: var(--border-radius-small);
+    border-bottom-left-radius: 0;
+}
+
+.username {
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.25rem
+}
+
+.messageContent {
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.3125;
+}
+
+.messageTime {
+    position: absolute;
+    bottom: 0.1rem;
+    right: 0.5rem;
+}
+
+.messageTime span {
+    font-size: .75rem;
+    line-height: 1.35;
+    color: rgba(var(--gray-7), 0.75);
+}
+
+.bottomCurvedIcon {
+    position: absolute;
+    left: -0.5rem;
+    bottom: -0.45rem;
+}

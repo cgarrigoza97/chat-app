@@ -9,8 +9,11 @@
   --gray-4: rgb(218,220,224);
   --gray-5: rgba(114,114,114,0.168627);
   --gray-6: #a2acb4;
+  --gray-7: 104, 108, 114;
   --border-radius: 0.75rem;
+  --border-radius-small: 0.375rem;
   --message-input-field-height: 3.5rem;
+  --small-image-size: 2.125rem;
   --large-round-button-height: var(--message-input-field-height);
   --large-round-button-width: var(--message-input-field-height);
 }

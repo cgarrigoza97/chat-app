@@ -3,6 +3,7 @@ import SentimentSatisfiedAltIcon from '@mui/icons-material/SentimentSatisfiedAlt
 import AttachFileIcon from '@mui/icons-material/AttachFile';
 import styles from './MessageInputField.module.css'
 import { MessageInputIconButton } from '../MessageInputIconButton/MessageInputIconButton';
+import { MessageBubbleIcon } from '../MessageBubbleIcon/MessageBubbleIcon';
 
 
 export const MessageInputField = () => {
@@ -46,6 +47,11 @@ export const MessageInputField = () => {
             <div className={styles.MessageInputBtnWrapper}>
                 <MessageInputIconButton icon={AttachFileIcon} />
             </div>
+
+            <div className={styles.MessageInputFieldIconWrapper}> 
+                <MessageBubbleIcon />
+            </div>
+
         </div>
     )
 }

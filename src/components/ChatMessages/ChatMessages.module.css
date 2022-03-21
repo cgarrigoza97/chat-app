@@ -1,0 +1,12 @@
+
+.ChatMessagesContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 0.5rem;
+}
+
+.ChatMessagesContainer > *:not(:first-child) {
+    margin-bottom: 0.625rem;
+}

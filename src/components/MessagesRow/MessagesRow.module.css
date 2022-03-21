@@ -1,0 +1,43 @@
+
+.messagesRowWrapper {
+    width: 100%;
+    display: flex;
+}
+
+/* TODO: define correct width */
+.messagesRowContainer {
+    width: 70%;
+    display: flex;
+    margin-bottom: 0.375rem;
+}
+
+.messagesToLeft {
+    margin-right: auto;
+}
+
+.messagesToRight {
+    margin-left: auto;
+}
+
+.userImageWrapper {
+    width: var(--small-image-size);
+    margin-right: 0.3125rem;
+    display: flex;
+    align-items: flex-end;
+}
+
+.userImageWrapper img {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.messages {
+    width: calc(100% - var(--small-image-size));
+    display: flex;
+    flex-direction: column;
+}
+
+.messages > *:not(:last-child) {
+    margin-bottom: 0.375rem;
+}
