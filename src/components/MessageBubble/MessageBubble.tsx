@@ -1,39 +1,42 @@
-import { border } from '@mui/system'
 import styles from './MessageBubble.module.css'
 import { MessageBubbleIcon } from '../MessageBubbleIcon/MessageBubbleIcon';
 
 interface Props {
+    isFromOwnUser?: boolean,
     username?: string,
     message: string, 
     time?: string,
     bubblePosition: 'first' | 'middle' | 'last' | 'unique'
 }
 
-export const MessageBubble = ({ bubblePosition = 'first', username, message, time } : Props) => {
+export const MessageBubble = ({ isFromOwnUser = false, bubblePosition = 'first', username, message, time } : Props) => {
 
     let borderRadius = ""
 
     switch(bubblePosition) {
         case 'first':
-            borderRadius = `${styles.firstBorderRadius}`
+            borderRadius = isFromOwnUser ? `${styles.firstBorderRadiusRight}` : `${styles.firstBorderRadiusLeft}`
             break
 
         case 'middle':
-            borderRadius = `${styles.middleBorderRadius}`
+            borderRadius = isFromOwnUser ? `${styles.middleBorderRadiusRight}` : `${styles.middleBorderRadiusLeft}`
             break
 
         case 'last':
-            borderRadius = `${styles.lastBorderRadius}`
+            borderRadius = isFromOwnUser ? `${styles.lastBorderRadiusRight}` : `${styles.lastBorderRadiusLeft}`
             break
 
         case 'unique':
-            borderRadius = `${styles.uniqueBorderRadius}`
+            borderRadius = isFromOwnUser ? `${styles.uniqueBorderRadiusRight}` : `${styles.uniqueBorderRadiusLeft}`
             break
     }
 
+    const bubbleClasses = isFromOwnUser && `${styles.messageBubleFromUser}`
+    const iconPositioning = isFromOwnUser ? `${styles.bottomCurvedIconRight}` : `${styles.bottomCurvedIconLeft}`
+
     return (
-        <div className={`${styles.messageBuble} ${borderRadius}`}>
-            { (bubblePosition === 'first' || bubblePosition === 'unique') &&
+        <div className={`${styles.messageBuble} ${borderRadius} ${bubbleClasses}`}>
+            { ((bubblePosition === 'first' || bubblePosition === 'unique') && !isFromOwnUser) &&
                 <span className={styles.username}>{username}</span>
             }
 
@@ -41,13 +44,14 @@ export const MessageBubble = ({ bubblePosition = 'first', username, message, tim
                 {message}
             </p>
 
+            <div className={styles.messageTime}>
+                <span>{time}</span>
+            </div>
+
             { (bubblePosition === 'last' || bubblePosition === 'unique') &&
                 <>
-                    <div className={styles.messageTime}>
-                        <span>{time}</span>
-                    </div>
-                    <div className={styles.bottomCurvedIcon}>
-                        <MessageBubbleIcon />
+                    <div className={`${styles.bottomCurvedIconBase} ${iconPositioning}`}>
+                        <MessageBubbleIcon isFromOwnUser={isFromOwnUser} />
                     </div>
                 </>
             }

@@ -5,7 +5,7 @@ export const ChatMessages = () => {
     return (
         <div className={styles.ChatMessagesContainer}>
             <MessagesRow />
-            <MessagesRow />
+            <MessagesRow isMessageFromUser/>
         </div>
     )
 }

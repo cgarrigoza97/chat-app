@@ -32,9 +32,11 @@ export const MessagesRow = ({ isMessageFromUser }: Props) => {
     return (
         <div className={styles.messagesRowWrapper}>
             <div className={`${styles.messagesRowContainer} ${alignment}`}>   
-                <div className={styles.userImageWrapper}>
-                    <img src='https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png' alt='icon' />
-                </div>
+                {   !isMessageFromUser &&
+                    <div className={styles.userImageWrapper}>
+                        <img src='https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png' alt='icon' />
+                    </div>
+                }
 
                 <div className={styles.messages}>
                     {
@@ -52,6 +54,7 @@ export const MessagesRow = ({ isMessageFromUser }: Props) => {
                     
 
                             return <MessageBubble
+                                isFromOwnUser={isMessageFromUser}
                                 bubblePosition={position}
                                 message={m.text}
                                 time={m.time}

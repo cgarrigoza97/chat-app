@@ -10,6 +10,8 @@
   --gray-5: rgba(114,114,114,0.168627);
   --gray-6: #a2acb4;
   --gray-7: 104, 108, 114;
+  --green: rgb(238,255,222);
+  --green-2: rgba(79,174,78,1);
   --border-radius: 0.75rem;
   --border-radius-small: 0.375rem;
   --message-input-field-height: 3.5rem;
@@ -29,6 +31,7 @@ body {
   --bg-color-1: white;
   --bg-color-2: #A2AF8E;
   --bg-color-3: var(--blue);
+  --bg-color-own: var(--green);
   --font-color-1: #B2B5B7;
   --highlight-color: var(--blue);
   --bg-input: var(--light-gray);
@@ -40,6 +43,7 @@ body {
   --color-light-shadow: var(--gray-5);
   --icon-color-1: rgb(var(--gray-2), 0.8);
   --placeholder-color: var(--gray-6);
+  --own-message-info: var(--green-2);
   --animation-speed: 150ms;
 }
 
