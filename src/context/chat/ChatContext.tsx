@@ -1,6 +1,6 @@
 import React from 'react';
 import { createContext } from "react";
-import { ChatState } from "../../interfaces/interfaces";
+import { ChatState } from "../../interfaces/chatState";
 import { ChatAction } from './chatReducer';
 
 export type ChatContextProps = {

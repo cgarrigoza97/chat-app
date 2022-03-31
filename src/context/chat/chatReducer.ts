@@ -1,10 +1,12 @@
-import { ChatState } from "../../interfaces/interfaces";
+import { ChatState } from "../../interfaces/chatState";
+import { Message } from "../../interfaces/message";
+import { User } from "../../interfaces/user";
 
 export type ChatAction = 
-    | { type: 'loadUsers'; payload: string[] }
+    | { type: 'loadUsers'; payload: User[] }
     | { type: 'activateChat'; payload: string }
-    | { type: 'sendNewMessage'; payload: string }
-    | { type: 'loadMessages'; payload: string[] }
+    | { type: 'sendNewMessage'; payload: Message }
+    | { type: 'loadMessages'; payload: Message[] }
     | { type: 'cleanAllMessages'; payload: null }
 
 export const chatReducer = (state: ChatState, action: ChatAction) => {
